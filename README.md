@@ -30,32 +30,42 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+DOM stands for Document Object Model.  It is an object-based representation of the site.  It is an attempt to convert the structure of an HTML document into an object model that can be used by various programs
+
 2. What is an event?
+
+An event is almost anything that a client does while interacting with a site.  Events can be mouse events (e.g. clicking, hovering), resizing, focusing, keyboard hits, or a number of other things
 
 3. What is an event listener?
 
+An event listener is code that tells our site how to respond when an event happens to elements on our page.  For example, it may tell our site how to respond when a user clicks a button or when a user resizes the page.
+
 4. Why would we convert a NodeList into an Array?
+
+NodeList are array-like objects, but they don't have access to all the same methods as arrays.  While you can use a .forEach method on a NodeList, you can't use other methods such as .map, .filter or .reduce.  Therefore, you may need to convert a NodeList to an Array using "Array.from()" in order to have access to these methods.
 
 5. What is a component?
 
+A component is a reusable set of code that allows us to build websites with repetitive features without the burden of rewriting the same code over an over again.
+
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [x] Following the instructions in the `Header/index.js` file, create the Header component. 
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [x] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [x] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
