@@ -17,3 +17,41 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function createCarousel() {
+  const carousel = document.createElement('div');
+  const leftButton = document.createElement('div');
+  const imgOne = document.createElement('img');
+  const imgTwo = document.createElement('img');
+  const imgThree = document.createElement('img');
+  const imgFour = document.createElement('img');
+  const rightButton = document.createElement('div');
+
+
+  carousel.classList.add('carousel');
+  leftButton.classList.add('left-button');
+  rightButton.classList.add('right-button');
+
+  carousel.appendChild(leftButton);
+  carousel.appendChild(imgOne);
+  carousel.appendChild(imgTwo);
+  carousel.appendChild(imgThree);
+  carousel.appendChild(imgFour);
+  carousel.appendChild(rightButton);
+
+  leftButton.textContent = ' < ';
+  rightButton.textContent = ' > ';
+
+  imgOne.src = './assets/carousel/mountains.jpeg';
+  imgTwo.src = './assets/carousel/computer.jpeg';
+  imgThree.src = './assets/carousel/trees.jpeg';
+  imgFour.src = './assets/carousel/turntable.jpeg'
+  
+  console.log(carousel);
+  return carousel;
+
+}
+
+const carouselContainer = document.querySelector('.carousel-container');
+
+carouselContainer.appendChild(createCarousel());
