@@ -30,7 +30,7 @@ function Header() {
     title.textContent = 'Lambda Times';
     temp.textContent = '98°';
 
-    console.log(header);
+    // console.log(header);
     return header;
 }
 
